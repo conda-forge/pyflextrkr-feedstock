@@ -1,4 +1,4 @@
-{% set version = "2025.02.1" %}
+{% set version = "2025.03.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/FlexTRKR/PyFLEXTRKR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9dd8a0db48911f0db6c08695fb355d1002e3a2903b5f7f4b63065554e48477d4
+  sha256: 64c84bfc218f19e78f72754a3675662d44e73e1e42a9b49d58f337cb9a433cc4
 
 build:
   noarch: python
