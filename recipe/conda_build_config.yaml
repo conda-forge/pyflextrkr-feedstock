@@ -1,0 +1,13 @@
+python:
+  - 3.10
+  - 3.11
+  - 3.12
+
+numpy:
+  - 2.0
+
+python_impl:
+  - cpython
+
+is_python_min:
+  - False
