@@ -1,4 +1,4 @@
-{% set version = "2025.03.2" %}
+{% set version = "2025.05.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/FlexTRKR/PyFLEXTRKR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e6b6f6302332d5cc577a65d69464d725c589fca72ff81009a52e3861206e466c
+  sha256: 018d4102401a2ed0ba82467e73883be2a0a3bffa1ecccf6e5675ba284e02dd60
 
 build:
   noarch: python
@@ -25,9 +25,12 @@ requirements:
     - cartopy
     - colorcet
     - colormath
+    - easygems
     - dask
     - ffmpeg
     - healpix
+    - intake==0.7.0
+    - intake-xarray==0.7.0
     - ipython
     - joblib
     - matplotlib-base
@@ -42,7 +45,7 @@ requirements:
     - seaborn
     - xarray >=2025.1.2
     - xesmf >=0.8
-    - zarr
+    - zarr<3.0.0
 
 test:
   requires:
